@@ -1,0 +1,21 @@
+.nav-bar {
+  position: fixed;
+  margin-bottom: <.nav-bar-height>;
+  background-color: lightblue;
+  width: 100%;
+  word-wrap: none;
+}
+
+.nav-bar li {
+  display: inline;
+
+}
+
+/*.about {
+  margin-top: 7em;
+}*/
+
+.about img {
+  float: left;
+  width: 50%;
+}

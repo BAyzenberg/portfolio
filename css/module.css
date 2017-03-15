@@ -1,0 +1,9 @@
+@media screen and (min-width: 500px) {
+  .nav-bar {
+    margin-top: -8em;
+  }
+
+  .about {
+    margin-top: 8em;
+  }
+}
