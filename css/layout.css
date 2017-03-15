@@ -3,7 +3,7 @@
   margin-bottom: <.nav-bar-height>;
   background-color: lightblue;
   width: 100%;
-  word-wrap: none;
+  margin-top: -4em;
 }
 
 .nav-bar li {
@@ -11,9 +11,9 @@
 
 }
 
-/*.about {
-  margin-top: 7em;
-}*/
+.about, #project-display {
+  margin-top: 4em;
+}
 
 .about img {
   float: left;
