@@ -11,11 +11,21 @@ var salmonCookie = new Project('Salmon Cookie', 'A simple project that taught us
 
 console.log(salmonCookie);
 
-var projects = [salmonCookie];
+var textventure = new Project('Textventure', '201 project week choose your own adventure', 'https://carloscadena.github.io/textventure/');
+
+var projects = [salmonCookie, textventure];
 
 Project.prototype.show = function () {
-  // Some way of output through JQuery.
-  $(document).ready(function() {
-    // $('.projects-list').
-  });
+  var $newProject = $('div.template').clone();
+  $newProject.removeClass('template');
+
+  $newProject.find('h1').text(this.name);
+  $newProject.find('p').text(this.description);
+  $newProject.find('a').text(this.link);
+  $newProject.find('a').attr('href', this.link);
+  return $newProject;
 };
+
+projects.forEach(function(a) {
+  $('#project-display').append(a.show());
+});
