@@ -1,15 +1,3 @@
-@media screen and (min-width: 500px) {
-  .nav-bar {
-    padding: 0 10%;
-    margin-top: -5em;
-  }
-
-  h1 {
-    font-size: 3em;
-  }
-
-
-  .about, #project-display {
-    margin-top: 5em;
-  }
+.nav-bar {
+  background-color: lightblue;
 }
