@@ -1,0 +1,39 @@
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  margin-top: -5em;
+}
+
+.nav-bar li {
+  display: inline;
+
+}
+
+.about, #project-display {
+  margin-top: 5em;
+}
+
+.about img {
+  float: left;
+  width: 50%;
+}
+
+.menu-icon {
+  text-align: right;
+}
+
+@media screen and (min-width: 500px) {
+  .nav-bar {
+    padding: 0 10%;
+    margin-top: -6em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+
+  .about, #project-display {
+    margin-top: 6em;
+  }
+}

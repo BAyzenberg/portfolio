@@ -3,14 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" href="vendor/css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <title>Projects</title>
-    <script type="text/javascript" src = "js/projects.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/module.css">
   </head>
   <body>
     <!-- Nav bar of some kind (fixed positioning)-->
     <div class="nav-bar">
       <h1>Ben Ayzenberg</h1>
       <!-- Hamburger menu list -->
+      <div class="menu-icon">
+        ☰
+      </div>
       <ul>
         <!-- Link to this page -->
         <li><a href="index.html">About Ben</a></li>
@@ -22,13 +29,19 @@
     </div>
 
     <!-- Accordion Menu of Projects -->
-    <ul class = "projects-list">
+    <section id = "project-display">
+      <div class="template project">
+        <h1>Project Name</h1>
+        <p>Description</p>
+        <a href="#" target="_blank">link to the Live</a>
+      </div>
 
-    </ul>
+    </section>
 
     <!-- link to GitHub -->
     <div class= "github">
-      <a href="https://github.com/BAyzenberg">Find my other projects here.</a>
+      <a href="https://github.com/BAyzenberg" target="_blank">Find my other projects here.</a>
     </div>
+    <script type="text/javascript" src = "js/projects.js"></script>
   </body>
 </html>
