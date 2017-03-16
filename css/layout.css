@@ -36,4 +36,13 @@ header {
   .about, #project-display {
     margin-top: 6em;
   }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .hidden {
+    display: inline-block;
+  }
+
 }

@@ -1,6 +1,6 @@
 'use strict';
 
-$('.nav-bar').hide();
+$('.nav-bar').addClass('.hidden');
 
 $('.menu-icon').on('click', function() {
   $('.nav-bar').toggle(function() {
