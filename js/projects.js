@@ -15,7 +15,7 @@ var textventure = new Project('Textventure', '201 project week choose your own a
 
 var projects = [salmonCookie, textventure];
 
-Project.prototype.show = function () {
+Project.prototype.toHTML = function () {
   var $newProject = $('div.template').clone();
   $newProject.removeClass('template');
 
@@ -27,5 +27,5 @@ Project.prototype.show = function () {
 };
 
 projects.forEach(function(a) {
-  $('#project-display').append(a.show());
+  $('#project-display').append(a.toHTML());
 });

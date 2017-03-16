@@ -1,12 +1,11 @@
-.nav-bar {
+header {
   position: fixed;
   width: 100%;
   margin-top: -5em;
 }
 
-.nav-bar li {
-  display: inline;
-
+.hidden {
+  display: none;
 }
 
 .about, #project-display {
@@ -19,11 +18,12 @@
 }
 
 .menu-icon {
+  width: 5%;
   text-align: right;
 }
 
 @media screen and (min-width: 500px) {
-  .nav-bar {
+  header {
     padding: 0 10%;
     margin-top: -6em;
   }
@@ -36,4 +36,13 @@
   .about, #project-display {
     margin-top: 6em;
   }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .hidden {
+    display: inline-block;
+  }
+
 }
