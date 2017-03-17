@@ -7,7 +7,6 @@ tabView.handleNav = function() {
     $('.main-content').hide();
     $('section[data-tab = "' + $(this).data('content') + '"]').fadeIn();
   });
-  console.log('a tab was clicked');
 
   $('.nav-bar .tab:first').click();
 };

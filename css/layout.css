@@ -8,10 +8,6 @@ header {
   margin-top: 5em;
 }
 
-.about img {
-  float: left;
-  width: 50%;
-}
 
 .hide {
   display: none
@@ -22,7 +18,7 @@ header {
   text-align: left;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 500px) {
   header {
     padding: 0 10%;
     margin-top: -6em;
@@ -32,6 +28,10 @@ header {
     font-size: 3em;
   }
 
+  .main-content img {
+    float: left;
+    width: 50%;
+  }
 
   .about, #project-display {
     margin-top: 6em;
