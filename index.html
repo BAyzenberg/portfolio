@@ -17,18 +17,20 @@
       <div class="menu-icon">
         ☰
       </div>
-      <div class="nav-bar">
+      <div class="nav-bar hide">
         <!-- Hamburger menu list -->
         <ul>
           <!-- Link to this page -->
-          <li><a href="index.html">About Ben</a></li>
+          <li class = "tab" data-content = "about"><a href="#">Home</a></li>
           <!-- Link to Project Page -->
-          <li><a href="projects.html">Projects</a></li>
+          <li class = "tab" data-content = "projects"><a href="#">Projects</a></li>
         </ul>
         <!-- have some sort of indication on which page you are on (thicker border, bold text?) -->
       </div>
     </header>
-    <div class = "about">
+
+    <!-- about section -->
+    <section class = "main-content" data-tab = "about">
     <!-- Picture and info about me -->
       <!-- picture -->
       <img src="" alt="Ben">
@@ -38,13 +40,32 @@
 
       Duis eget mi facilisis, please, and before at, convallis ligula. Until at football yeast. Kids quiver made financing. Morbi sit amet, nisl at pulvinar lacinia, mauris, is the poverty of the bed, there was a loud crash from the sed rhoncus purus. Fusce metus tortor, consectetur quis sem ac, tincidunt facilisis felis. Suspendisse ornare risus imperdiet ut congue. Integer feugiat, leo id mollis tincidunt, Aliquam mauris erat massa, and the element of diam eu mi. Sed sit amet mauris condimentum, unless one is being prepared.</p>
       <!-- Possible links to social media -->
-    </div>
-    <div class= "skills">
+      <div class= "skills">
       <!-- Skills -->
       <!-- side by side lists -->
+      </div>
+    </section>
 
-    </div>
+    <!-- Projects section -->
+    <section class = "main-content" data-tab = "projects">
+      <div id = "project-display">
+        <div class="template project">
+          <h1>Project Name</h1>
+          <p>Description</p>
+          <a href="#" target="_blank">link to the Live</a>
+        </div>
+      </div>
+      <!-- link to GitHub -->
+      <div class= "github">
+        <a href="https://github.com/BAyzenberg" target="_blank">Find my other projects here.</a>
+      </div>
+  </section>
     <!-- previous experienece? -->
+
+    <!-- Script -->
     <script src = "js/hamburger.js"></script>
+    <script src = "js/project-list.js"></script>
+    <script type="text/javascript" src = "js/projects.js"></script>
+    <script src = "js/tab.js"></script>
   </body>
 </html>

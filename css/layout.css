@@ -4,22 +4,18 @@ header {
   margin-top: -5em;
 }
 
-.hidden {
-  display: none;
-}
-
-.about, #project-display {
+.main-content {
   margin-top: 5em;
 }
 
-.about img {
-  float: left;
-  width: 50%;
+
+.hide {
+  display: none
 }
 
 .menu-icon {
   width: 5%;
-  text-align: right;
+  text-align: left;
 }
 
 @media screen and (min-width: 500px) {
@@ -32,6 +28,10 @@ header {
     font-size: 3em;
   }
 
+  .main-content img {
+    float: left;
+    width: 50%;
+  }
 
   .about, #project-display {
     margin-top: 6em;
@@ -41,8 +41,11 @@ header {
     display: none;
   }
 
-  .hidden {
+  .nav-bar li {
     display: inline-block;
   }
 
+  .hide {
+    display: block;
+  }
 }
