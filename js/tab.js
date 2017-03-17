@@ -3,7 +3,7 @@
 var tabView = {};
 
 tabView.handleNav = function() {
-  $('.main-content').on('click', '.tab', function() {
+  $('.nav-bar').on('click', '.tab', function() {
     $('.main-content').hide();
     $('section[data-tab = "' + $(this).data('content') + '"]').fadeIn();
   });
