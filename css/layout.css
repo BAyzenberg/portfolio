@@ -17,12 +17,16 @@ header {
   width: 50%;
 }
 
-.menu-icon {
-  width: 5%;
-  text-align: right;
+.hide {
+  display: none
 }
 
-@media screen and (min-width: 500px) {
+.menu-icon {
+  width: 5%;
+  text-align: left;
+}
+
+@media screen and (min-width: 400px) {
   header {
     padding: 0 10%;
     margin-top: -6em;
@@ -41,8 +45,11 @@ header {
     display: none;
   }
 
-  .hidden {
+  .nav-bar li {
     display: inline-block;
   }
 
+  .hide {
+    display: block;
+  }
 }
