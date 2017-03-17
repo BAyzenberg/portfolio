@@ -4,11 +4,7 @@ header {
   margin-top: -5em;
 }
 
-.hidden {
-  display: none;
-}
-
-.about, #project-display {
+.main-content {
   margin-top: 5em;
 }
 
