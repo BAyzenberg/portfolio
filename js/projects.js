@@ -5,10 +5,8 @@ Project.prototype.toHTML = function () {
   return template(this);
 };
 
+//accordion preview
 Project.prototype.preview = function() {
-  // $('.project-view *').addClass('hidden');
-  // $('.project-view h1').removeClass('hidden');
-
   $('.project-view').on('click', function() {
     $('.project-view *').not('h1').hide();
     $(this).find('*').not('h1').show();
