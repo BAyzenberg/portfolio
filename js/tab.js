@@ -11,7 +11,4 @@ tabView.handleNav = function() {
   $('.nav-bar .tab:first').click();
 };
 
-// $(document).ready(function() {
 tabView.handleNav();
-
-// });
