@@ -6,14 +6,14 @@ Project.prototype.toHTML = function () {
 };
 
 Project.prototype.preview = function() {
-  $('.project-view *').hide();
-  $('.project-view h1').show();
+  // $('.project-view *').addClass('hidden');
+  // $('.project-view h1').removeClass('hidden');
 
-  // $('.project-view h1').toggle(function() {
-  //   $('this:parent:first-child').fadeIn('fast');
-  // }, function() {
-  //   $('this:parent:first-child').fadeOut('fast');
-  // });
+  $('.project-view').on('click', function() {
+    $('.project-view *').not('h1').hide();
+    $(this).find('*').not('h1').show();
+  });
+  $('.project-view:first').click();
 };
 
 projects.forEach(function(a) {
