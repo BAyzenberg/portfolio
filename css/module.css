@@ -5,3 +5,16 @@ header {
 .main-content {
   background: #AFBE77;
 }
+
+.main-content p {
+  font-size: 1.6em;
+}
+
+.project-view {
+  border: 2px solid black;
+}
+
+.nav-bar a {
+  font-size: 1.9em;
+  border: 1px solid black;
+}
