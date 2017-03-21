@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/module.css">
+    <link rel="stylesheet" href="css/state.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script id = "template-output" type="text/x-handlebars-template">
-      <div class="template-project">
+      <div class = "project-view">
         <h1>{{name}}</h1>
         <p>{{{description}}}</p>
         <a href="{{link}}" target="_blank">{{link}}</a>
       </div>
-
     </script>
   </head>
   <body>
     <header>
-      <h1>Ben Ayzenberg</h1>
+      <h1>Everything Ben</h1>
       <!-- Nav bar of some kind (fixed positioning)-->
       <div class="menu-icon">
         ☰
@@ -42,7 +42,7 @@
     <section class = "main-content" data-tab = "about">
     <!-- Picture and info about me -->
       <!-- picture -->
-      <img src="" alt="Ben">
+      <img src="imgs/Ben.jpg" alt="Ben">
       <!-- about text to the right of the image (and continues below?) -->
       <!-- Lorem ipsum displayed and "translated" to english -->
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Losing my players. Aenean sagittis risus purus, et accumsan enim venenatis et. Nullam augue risus, consectetur in the now of life, the price of the pulvinar. Duis interdum ligula ante, id feugiat lectus commodo at. In ac felis ac mi fermentum laoreet. Now Suspendisse justo, mollis quis sollicitudin vel, viverra id odio. In the refinancing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor vehicula erat Employment torques for our marriage, consectetur adipiscing elit. Employee receives no borders.</br>
@@ -58,6 +58,7 @@
     <!-- Projects section -->
     <section class = "main-content" data-tab = "projects">
       <div id = "project-display"></div>
+
       <!-- link to GitHub -->
       <div class= "github">
         <a href="https://github.com/BAyzenberg" target="_blank">Find my other projects here.</a>

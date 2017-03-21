@@ -3,6 +3,19 @@ h1 {
   font-size: 2em;
 }
 
-.template {
-  display: none;
+body {
+  background-color: #803A00;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+header {
+  background-color: lightblue;
+  position: fixed;
+  width: 100%;
+  margin-top: -3.7em;
 }
