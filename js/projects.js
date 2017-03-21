@@ -1,6 +1,6 @@
 'use strict';
 
-Project.prototype.toHTML = function () {
+Project.prototype.toHTML = function() {
   var template = Handlebars.compile($('#template-output').text());
   return template(this);
 };

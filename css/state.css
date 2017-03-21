@@ -1,7 +1,7 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 640px) {
   header {
     padding: 0 10%;
-    margin-top: -5.4em;
+    margin-top: -6.4em;
   }
 
   h1 {
@@ -14,7 +14,7 @@
   }
 
   .main-content {
-    margin-top: 5.4em;
+    margin-top: 6.4em;
     padding: 1% 10%;
   }
 
