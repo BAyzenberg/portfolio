@@ -4,7 +4,7 @@ h1 {
 }
 
 body {
-  background-color: #803A00;
+  background-image: url(/imgs/bluesteel.jpg);
 }
 
 a {
@@ -14,8 +14,8 @@ a {
 }
 
 header {
-  background-color: lightblue;
+  background-color: #5c677a;
   position: fixed;
   width: 100%;
-  margin-top: -3.7em;
+  margin-top: -4.7em;
 }
