@@ -1,0 +1,32 @@
+@media screen and (min-width: 500px) {
+  header {
+    padding: 0 10%;
+    margin-top: -5.4em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  .main-content img {
+    float: left;
+    width: 50%;
+  }
+
+  .main-content {
+    margin-top: 5.4em;
+    padding: 1% 10%;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-bar li {
+    display: inline-block;
+  }
+
+  .hide {
+    display: block;
+  }
+}
