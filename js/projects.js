@@ -17,15 +17,14 @@ Project.prototype.toHTML = function() {
 Project.showProjects = function() {
   projects.forEach(function(a) {
     $('#project-display').append(a.toHTML());
-    a.preview();
   });
 };
 
 //accordion preview
-Project.prototype.preview = function() {
+Project.preview = function() {
   $('.project-view').on('click', function() {
-    $('.project-view *').not('h1').hide();
-    $(this).find('*').not('h1').show();
+    $('.project-view *').not('h1').fadeOut('fast');
+    $(this).find('*').not('h1').fadeIn('slow');
   });
   $('.project-view:first').click();
 };
@@ -38,6 +37,7 @@ Project.getData = function() {
       projects.push(new Project(singleP));
     });
     Project.showProjects();
+    Project.preview();
   }).fail(function() {
     //getJSON failure
     console.error('Data was not obtained');
