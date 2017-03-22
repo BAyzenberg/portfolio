@@ -33,13 +33,14 @@ Project.populateArray = function(array ,data) {
   });
 };
 
+//layout projects and display them
 Project.display = function(array, data) {
   Project.populateArray(array, data);
   Project.showProjects();
   Project.preview();
 };
 
-//Obtain data from the .json
+//Obtain data from the .json and display
 Project.getData = function() {
   $.getJSON('data/projectList.json')
   .then(function(data) {
