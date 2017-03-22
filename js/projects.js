@@ -1,7 +1,5 @@
 'use strict';
 
-var projects = [];
-
 //Project Constructor
 function Project (rawProject) {
   for(var key in rawProject) {
@@ -29,19 +27,26 @@ Project.preview = function() {
   $('.project-view:first').click();
 };
 
+Project.populateArray = function(array ,data) {
+  data.forEach(function(singleP) {
+    array.push(new Project(singleP));
+  });
+};
+
+Project.display = function(array, data) {
+  Project.populateArray(array, data);
+  Project.showProjects();
+  Project.preview();
+};
+
 //Obtain data from the .json
 Project.getData = function() {
   $.getJSON('data/projectList.json')
   .then(function(data) {
-    data.forEach(function(singleP) {
-      projects.push(new Project(singleP));
-    });
-    Project.showProjects();
-    Project.preview();
+    localStorage.projects = JSON.stringify(data);
+    Project.display(projects, data);
   }).fail(function() {
     //getJSON failure
     console.error('Data was not obtained');
   });
 };
-
-Project.getData();
