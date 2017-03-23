@@ -13,6 +13,8 @@ app.use(express.static('./public'));
 
 // Routes?  not necissary at the moment
 
+// Log the PORT being run on
 app.listen(PORT, function() {
+  //No console log provides no response to the server being functional
   console.log(`your app is being served on localhost:${PORT}`);
 });
