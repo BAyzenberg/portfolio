@@ -19,6 +19,3 @@ tabView.handleProjects = function() {
     Project.getData();
   });
 };
-
-tabView.handleNav();
-tabView.handleProjects();

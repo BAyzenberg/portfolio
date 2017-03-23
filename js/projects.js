@@ -42,17 +42,12 @@ Project.display = function(data) {
 
 //Obtain data from the .json and display
 Project.getData = function() {
-  // $.getJSON('data/projectList.json')
-  // .then(function(data) {
-  //   localStorage.projects = JSON.stringify(data);
-  //   Project.display(data);
   $.ajax({
     url: 'data/projectList.json',
     type: 'GET',
     ifModified: true,
     success: function(data) {
       if (data !== undefined) {
-        console.log('saving new data;');
         localStorage.projects = JSON.stringify(data);
       };
     },
@@ -61,7 +56,7 @@ Project.getData = function() {
       Project.display(raw);
     }
   }).fail(function() {
-    //JSON is not updated
-    console.error('Data was not obtained');
+    //ajax has an Error
+    console.error('Data access was obstructed.');
   });
 };
