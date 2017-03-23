@@ -15,17 +15,8 @@ tabView.handleNav = function() {
 tabView.handleProjects = function() {
   $('.tab[data-content = "projects"]').on('click', function () {
     projects = [];
-    if (localStorage.projects) {
-      var something;
-      if (something) {
-        // Project.display(projects, data);
-      } else {
-        $('#project-display').empty();
-        Project.getData();
-      }
-    } else {
-      Project.getData();
-    }
+    $('#project-display').empty();
+    Project.getData();
   });
 };
 

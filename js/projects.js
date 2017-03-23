@@ -27,27 +27,41 @@ Project.preview = function() {
   $('.project-view:first').click();
 };
 
-Project.populateArray = function(array ,data) {
+Project.populateArray = function(data) {
   data.forEach(function(singleP) {
-    array.push(new Project(singleP));
+    projects.push(new Project(singleP));
   });
 };
 
 //layout projects and display them
-Project.display = function(array, data) {
-  Project.populateArray(array, data);
+Project.display = function(data) {
+  Project.populateArray(data);
   Project.showProjects();
   Project.preview();
 };
 
 //Obtain data from the .json and display
 Project.getData = function() {
-  $.getJSON('data/projectList.json')
-  .then(function(data) {
-    localStorage.projects = JSON.stringify(data);
-    Project.display(projects, data);
+  // $.getJSON('data/projectList.json')
+  // .then(function(data) {
+  //   localStorage.projects = JSON.stringify(data);
+  //   Project.display(data);
+  $.ajax({
+    url: 'data/projectList.json',
+    type: 'GET',
+    ifModified: true,
+    success: function(data) {
+      if (data !== undefined) {
+        console.log('saving new data;');
+        localStorage.projects = JSON.stringify(data);
+      };
+    },
+    complete: function(data) {
+      var raw = JSON.parse(localStorage.projects);
+      Project.display(raw);
+    }
   }).fail(function() {
-    //getJSON failure
+    //JSON is not updated
     console.error('Data was not obtained');
   });
 };
