@@ -1,0 +1,13 @@
+[{
+	"name": "Salmon Cookie",
+	"description": "A simple project that taught us the uses of tables and forms.",
+	"link": "https://bayzenberg.github.io/salmon_cookie/"
+}, {
+	"name": "Textventure",
+	"description": "201 project week choose your own adventure",
+	"link": "https://carloscadena.github.io/textventure/"
+}, {
+	"name": "Busmall",
+	"description": "A basic use of event handlers.",
+	"link": "https://bayzenberg.github.io/bus_mall/"
+}]

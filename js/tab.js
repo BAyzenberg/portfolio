@@ -1,6 +1,7 @@
 'use strict';
 
 var tabView = {};
+var projects;
 
 tabView.handleNav = function() {
   $('.nav-bar').on('click', '.tab', function() {
@@ -11,4 +12,10 @@ tabView.handleNav = function() {
   $('.nav-bar .tab:first').click();
 };
 
-tabView.handleNav();
+tabView.handleProjects = function() {
+  $('.tab[data-content = "projects"]').on('click', function () {
+    projects = [];
+    $('#project-display').empty();
+    Project.getData();
+  });
+};
