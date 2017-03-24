@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 2000;
 // Define which directory we will serve static files from
 app.use(express.static('./public'));
 
-// Routes?  not necissary at the moment
+// Routes not necissary at the moment?
 
 // Log the PORT being run on
 app.listen(PORT, function() {
