@@ -12,6 +12,10 @@ const PORT = process.env.PORT || 2000;
 app.use(express.static('./public'));
 
 // Routes not necissary at the moment?
+app.use(function(request, response, next) {
+  console.log('404');
+  response.status(404).sendFile('404.html', {root: './public'});
+});
 
 // Log the PORT being run on
 app.listen(PORT, function() {
