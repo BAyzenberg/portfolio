@@ -18,8 +18,12 @@
 
 @media screen and (min-width: 640px) {
   header {
-    padding: 0 10%;
-    margin-top: -5em;
+    padding: 1% 10%;
+    margin-top: -8em;
+  }
+
+  body {
+    margin-top: 8em;
   }
 
   h1 {
@@ -32,7 +36,7 @@
   }
 
   .main-content {
-    padding: 1% 10%;
+    padding: 2% 10%;
     width: 80%;
     margin: auto;
   }
