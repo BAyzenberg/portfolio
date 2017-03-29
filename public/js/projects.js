@@ -1,4 +1,5 @@
 'use strict';
+// Wrap in IIFE
 
 //Project Constructor
 function Project (rawProject) {
@@ -6,6 +7,7 @@ function Project (rawProject) {
     this[key] = rawProject[key];
   };
 };
+// Change above to use .map()
 
 Project.prototype.toHTML = function() {
   var template = Handlebars.compile($('#template-output').text());
@@ -27,6 +29,7 @@ Project.preview = function() {
   $('.project-view:first').click();
 };
 
+// Change below to use .map()
 Project.populateArray = function(data) {
   data.forEach(function(singleP) {
     projects.push(new Project(singleP));

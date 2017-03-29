@@ -8,6 +8,7 @@ body {
 }
 
 a {
+  /*Change color something that doesn't hurt the eyes as much. This looks like an artifact of old code.*/
   color: red;
   text-decoration: none;
   font-size: 1.2em;
