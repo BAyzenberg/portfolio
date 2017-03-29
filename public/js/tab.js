@@ -1,22 +1,23 @@
 'use strict';
 // Wrap in IIFE
+(function(module) {
+  var tabView = {};
 
-var tabView = {};
-var projects;
+  tabView.handleNav = function() {
+    $('.nav-bar').on('click', '.tab', function() {
+      $('.main-content').hide();
+      $('section[data-tab = "' + $(this).data('content') + '"]').fadeIn();
+    });
 
-tabView.handleNav = function() {
-  $('.nav-bar').on('click', '.tab', function() {
-    $('.main-content').hide();
-    $('section[data-tab = "' + $(this).data('content') + '"]').fadeIn();
-  });
+    $('.nav-bar .tab:first').click();
+  };
 
-  $('.nav-bar .tab:first').click();
-};
-
-tabView.handleProjects = function() {
-  $('.tab[data-content = "projects"]').on('click', function () {
-    projects = [];
-    $('#project-display').empty();
-    Project.getData();
-  });
-};
+  tabView.handleProjects = function() {
+    $('.tab[data-content = "projects"]').on('click', function () {
+      let projects = [];
+      $('#project-display').empty();
+      Project.getData(projects);
+    });
+  };
+  module.tabView = tabView;
+}(window));
