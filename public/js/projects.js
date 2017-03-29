@@ -4,7 +4,7 @@
   //Project Constructor
   function Project (rawProject) {
     Object.keys(rawProject).forEach(key => this[key] = rawProject[key]);
-  };
+  }
   // Change above to use .map()
 
   Project.prototype.toHTML = function() {
@@ -57,9 +57,9 @@
       success: function(data) {
         if (data) {
           localStorage.projects = JSON.stringify(data);
-        };
+        }
       },
-      complete: function(data) {
+      complete: function() {
         var raw = JSON.parse(localStorage.projects);
         Project.display(projects, raw);
       }
