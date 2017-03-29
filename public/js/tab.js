@@ -1,4 +1,5 @@
 'use strict';
+// Wrap in IIFE
 
 var tabView = {};
 var projects;
