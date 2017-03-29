@@ -3,9 +3,7 @@
 (function(module) {
   //Project Constructor
   function Project (rawProject) {
-    for(var key in rawProject) {
-      this[key] = rawProject[key];
-    };
+    Object.keys(rawProject).forEach(key => this[key] = rawProject[key]);
   };
   // Change above to use .map()
 
@@ -30,16 +28,23 @@
   };
 
   // Change below to use .map()
+  // Project.populateArray = function(projects, data) {
+  //   data.forEach(function(singleP) {
+  //     projects.push(new Project(singleP));
+  //   });
+  // };
+
   Project.populateArray = function(projects, data) {
-    data.forEach(function(singleP) {
-      projects.push(new Project(singleP));
+    projects = data.map(function(singleP) {
+      return new Project(singleP);
     });
+    return projects;
   };
 
   //layout projects and display them
   Project.display = function(projects, data) {
-    Project.populateArray(projects, data);
-    Project.showProjects(projects);
+    let populatedProjects = Project.populateArray(projects, data);
+    Project.showProjects(populatedProjects);
     Project.preview();
   };
 
