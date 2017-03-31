@@ -27,13 +27,6 @@
     $('.project-view:first').click();
   };
 
-  // Change below to use .map()
-  // Project.populateArray = function(projects, data) {
-  //   data.forEach(function(singleP) {
-  //     projects.push(new Project(singleP));
-  //   });
-  // };
-
   Project.populateArray = function(projects, data) {
     projects = data.map(function(singleP) {
       return new Project(singleP);
