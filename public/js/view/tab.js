@@ -16,7 +16,7 @@
     $('.tab[data-content = "projects"]').on('click', function () {
       let projects = [];
       $('#project-display').empty();
-      Project.getData(projects);
+      projectController.getData(projects);
     });
   };
   module.tabView = tabView;
