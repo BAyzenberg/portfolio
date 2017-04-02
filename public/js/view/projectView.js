@@ -24,5 +24,11 @@
     projectView.preview();
   };
 
-    module.projectView = projectView;
+  projectView.handleProjects = function() {
+    let projects = [];
+    $('#project-display').empty();
+    projectController.getData(projects);
+  };
+
+  module.projectView = projectView;
 }(window));

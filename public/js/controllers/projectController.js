@@ -23,5 +23,12 @@
     });
   };
 
+  projectController.init = function() {
+    projectView.handleProjects();
+    $('.main-content').hide();
+    $('#projects').fadeIn();
+  };
+
+
   module.projectController = projectController;
 }(window));
