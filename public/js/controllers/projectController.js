@@ -29,6 +29,5 @@
     $('#projects').fadeIn();
   };
 
-
   module.projectController = projectController;
 }(window));
